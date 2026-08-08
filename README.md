@@ -1,6 +1,6 @@
 # 🚗 Commercial Sales Dashboard
 
-![Commercial Sales Dashboard](commercial-sales-dashboard.png)
+![Commercial Sales Dashboard](dashboard-overview.png)
 
 ## 📖 Project Overview
 
@@ -11,6 +11,19 @@ This project was created entirely for **learning and portfolio purposes**. All d
 The dashboard provides a consolidated view of sales performance, budget achievement, customer behavior, vehicle brand performance, and quarterly trends.
 
 ---
+## 📸 Dashboard Preview
+
+### 2015 Analysis
+
+![2015 Commercial Sales Dashboard](dashboard-2015.png)
+
+### 2016 Analysis
+
+![2016 Commercial Sales Dashboard](dashboard-2016.png)
+
+### 2017 Analysis
+
+![2017 Commercial Sales Dashboard](dashboard-2017.png)
 
 ## 🎯 Business Objective
 
@@ -46,25 +59,27 @@ The dataset does not represent a real company or real customers.
 
 ## 🏗️ Data Model
 
-The project uses a **Star Schema** data model.
+The project uses a **Star Schema** data model designed to separate transactional data from descriptive dimensions.
 
-The model separates transactional information from descriptive dimensions, allowing the dashboard to analyze sales from different business perspectives.
+### Fact Tables
 
-### Fact Table
+The main fact tables are:
 
-The central fact table contains the commercial transactions and numerical values required for analysis.
+- **Fact_Ventas** — Contains sales transactions and commercial metrics.
+- **fact_presupuestos** — Contains budget and target information.
 
 ### Dimension Tables
 
-The model includes descriptive dimensions such as:
+The model includes dimensions such as:
 
-- Date
-- Customer
-- Vehicle
-- Brand
-- Other relevant business attributes
+- **DimFechas** — Date and time analysis.
+- **dim_cliente** — Customer information.
+- **dim_vehiculo** — Vehicle, brand, model, and vehicle type information.
+- **dim_sede** — Branch information.
+- **Dim_Vendedor** — Salesperson information.
+- **dim_canal** — Sales channel information.
 
-This structure allows the analysis to be performed across different dimensions such as time, customer, and vehicle.
+This structure allows sales performance to be analyzed across multiple business dimensions, including time, customers, vehicles, branches, salespeople, and sales channels.
 
 ---
 
@@ -207,3 +222,13 @@ The analysis demonstrates how Power BI can be used to transform transactional da
 This project is a **fictional business simulation created exclusively for educational and portfolio purposes**.
 
 All data, entities, customers, vehicles, transactions, and business results are simulated and do not represent a real company or real-world commercial information.
+
+---
+
+## 👨‍💻 Author
+
+**Miguel Montoya**
+
+Economist | Aspiring Data Analyst
+
+Interested in Data Analytics, Business Intelligence, SQL, Power BI, Python, and data-driven decision-making.
